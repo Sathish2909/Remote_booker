@@ -31,7 +31,7 @@ mongoose.connection.on("disconnected", ()=>{
 // app.get("/",(req,res)=>{
 //     res.send("checking");
 // });
-
+app.use(express.json());
 app.use("/api/auth",authRoute);
 app.use("/api/room",roomRoute);
 app.use("/api/hotel",hotelRoute);

@@ -1,10 +1,22 @@
 import express from "express";
 
+import { verifyToken ,verifyAdmin,verifyUser} from "../utils/verifyToken.js";
+import { createRoom, deleteRoom, getRoom, getRooms, updateroom } from "../controllers/roomcontroller.js";
+
 const router=express.Router();
 
-router.get("/",(req,res)=>{
-    res.send("this is auth");
-});
+router.post("/:hotelid",verifyAdmin,createRoom);
 
 
-export default router;
+router.put("/:id",verifyAdmin,updateroom);
+
+
+router.delete("/:id/:hotelid",verifyAdmin,deleteRoom);
+
+
+
+router.get("/:id",getRoom);
+
+
+router.get("/",getRooms); 
+export default router; 

@@ -3,6 +3,7 @@
     background-color: rgb(7, 42, 165);
     display: flex;
     justify-content: center;
+    height:100px;
 }
 .navcontainer{
     width: 100%;
@@ -15,7 +16,8 @@
 }
 
 .logo{
-    font-weight: 500;
+    font-weight:900;
+    font-size: large;
 }
 
 .navButton{

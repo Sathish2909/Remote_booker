@@ -1,0 +1,49 @@
+.header{
+    background-color: rgb(7,42,165);
+    color:white;
+    justify-content:space-around;
+    align-items:center;
+    display: flex;
+    height:200px;
+}
+.headerContainer{
+    width:100%;
+    max-width: 1024px;
+    margin:20px 0px 100px 0px;
+}
+
+.headerList{
+    display:flex;
+    gap:40px;
+}
+.headreListItem{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom: 50px;
+}
+.headerListItem.active{
+    border:1px solid white;
+    padding: 5px 0px ;
+    border-radius: 4px;
+}
+.headerDesc{
+    margin:20px 
+}
+
+.headerBtn{
+    background-color: rgba(0, 55, 255, 0.286);
+    color:white;
+    font-weight: 500;
+    border:none;
+    padding:10px;
+    cursor:pointer;
+
+
+
+}
+.headerSearch{
+    height:30px;
+    background-color: white;
+
+}

@@ -5,6 +5,7 @@ import {
 import Home from "./pages/home/Home";
 import List from "./pages/list/List";
 import Hotel from "./pages/hotel/Hotel";
+import "./App.css";
 
 function App(){
   return(

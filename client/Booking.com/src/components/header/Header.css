@@ -1,11 +1,10 @@
 .header{
     background-color: rgb(7,42,165);
     color:white;
-    justify-content:space-between;
+    justify-content:space-around;
     height:200px;
     position:relative;
-    width: 100%;
-    max-width:1024px;
+    
     
 }
 .headerContainer{
@@ -17,8 +16,6 @@
 .headerList{
     display:flex;
     gap:40px;
-    width:100%;
-    max-width: 1024px;
 }
 .headreListItem{
     display: flex;
